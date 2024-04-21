@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Lenovo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-18 03:13:27 &#214;S"/>
+        <attribute name="created" value="TGVub3ZvO0RFU0tUT1AtUkRQUkhDMzsyMDI0LTAzLTE4OzAyOjQxOjE1IMOWUzszMTI5"/>
+        <attribute name="edited" value="TGVub3ZvO0RFU0tUT1AtUkRQUkhDMzsyMDI0LTAzLTE4OzAzOjEzOjI3IMOWUzsyOzMyNDE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="vize1, vize2, final" type="Integer" array="False" size=""/>
+            <declare name="vizeOrtalama, genelOrtalama" type="Real" array="False" size=""/>
+            <output expression="&quot;1. vize notunuzu giriniz: &quot;" newline="True"/>
+            <input variable="vize1"/>
+            <output expression="&quot;2. vize notunuzu giriniz: &quot;" newline="True"/>
+            <input variable="vize2"/>
+            <assign variable="vizeOrtalama" expression="(vize1 + vize2) / 2"/>
+            <output expression="&quot;Vize notlar&#305;n&#305;z&#305;n ortalamas&#305;: &quot;&amp;vizeOrtalama" newline="True"/>
+            <output expression="&quot;Final notunuzu giriniz: &quot;" newline="True"/>
+            <input variable="final"/>
+            <assign variable="genelOrtalama" expression="(vizeOrtalama*0.4) + final*0.6"/>
+            <output expression="&quot;Genel ortalaman&#305;z: &quot;&amp;genelOrtalama" newline="True"/>
+            <if expression="genelOrtalama &gt;= 59.5">
+                <then>
+                    <output expression="&quot;Dersi ge&#231;tiniz.&quot;" newline="True"/>
+                    <if expression="genelOrtalama &gt;= 66.5">
+                        <then>
+                            <if expression="genelOrtalama &gt;= 73.5">
+                                <then>
+                                    <if expression="genelOrtalama &gt;= 80.5">
+                                        <then>
+                                            <if expression="genelOrtalama &gt;= 87.5">
+                                                <then>
+                                                    <output expression="&quot;Harf notunuz: AA&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;Harf notunuz: BA&quot;" newline="True"/>
+                                                </else>
+                                            </if>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Harf notunuz: BB&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Harf notunuz: CB&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;Harf notunuz: CC&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;Dersten kald&#305;n&#305;z.&quot;" newline="True"/>
+                    <if expression="genelOrtalama &gt;= 34.5">
+                        <then>
+                            <if expression="genelOrtalama &gt;= 45.5">
+                                <then>
+                                    <if expression="genelOrtalama &gt;= 52.5">
+                                        <then>
+                                            <output expression="&quot;Harf notunuz: DC&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Harf notunuz: DD&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Harf notunuz: FD&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;Harf notunuz: FF&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Lenovo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-18 03:58:19 &#214;S"/>
+        <attribute name="created" value="TGVub3ZvO0RFU0tUT1AtUkRQUkhDMzsyMDI0LTAzLTE4OzAzOjQ3OjAwIMOWUzszMTMw"/>
+        <attribute name="edited" value="TGVub3ZvO0RFU0tUT1AtUkRQUkhDMzsyMDI0LTAzLTE4OzAzOjU4OjE5IMOWUzsyOzMyNTE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi1, sayi2, sonuc" type="Integer" array="False" size=""/>
+            <assign variable="sayi1" expression="5"/>
+            <assign variable="sayi2" expression="3"/>
+            <assign variable="sonuc" expression="Topla(sayi1, sayi2)"/>
+            <output expression="&quot;Sonu&#231;: &quot;&amp;sonuc" newline="True"/>
+            <assign variable="sonuc" expression="Fark(sayi1, sayi2)"/>
+            <output expression="&quot;Sonu&#231;: &quot;&amp;sonuc" newline="True"/>
+        </body>
+    </function>
+    <function name="Fark" type="Integer" variable="sonuc">
+        <parameters>
+            <parameter name="x" type="Integer" array="False"/>
+            <parameter name="y" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="sonuc" type="Integer" array="False" size=""/>
+            <assign variable="sonuc" expression="x-y"/>
+        </body>
+    </function>
+    <function name="Topla" type="Integer" variable="toplam">
+        <parameters>
+            <parameter name="x" type="Integer" array="False"/>
+            <parameter name="y" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="toplam" type="Integer" array="False" size=""/>
+            <assign variable="toplam" expression="x+y"/>
+        </body>
+    </function>
+</flowgorithm>

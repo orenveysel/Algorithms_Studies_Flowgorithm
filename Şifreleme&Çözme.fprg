@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Lenovo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-19 04:45:16 &#214;S"/>
+        <attribute name="created" value="TGVub3ZvO0RFU0tUT1AtUkRQUkhDMzsyMDI0LTAzLTE5OzAzOjQ5OjQ0IMOWUzszMTQx"/>
+        <attribute name="edited" value="TGVub3ZvO0RFU0tUT1AtUkRQUkhDMzsyMDI0LTAzLTE5OzA0OjQ1OjE2IMOWUzsxOzMyNDU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="cumle, sifre" type="String" array="False" size=""/>
+            <output expression="&quot;Bir c&#252;mle giriniz: &quot;" newline="True"/>
+            <input variable="cumle"/>
+            <assign variable="sifre" expression="Sifrele(cumle)"/>
+            <call expression="Coz(sifre)"/>
+        </body>
+    </function>
+    <function name="Coz" type="None" variable="">
+        <parameters>
+            <parameter name="cumle" type="String" array="False"/>
+        </parameters>
+        <body>
+            <declare name="sifre" type="String" array="False" size=""/>
+            <assign variable="sifre" expression="&quot;&quot;"/>
+            <declare name="ascii, i" type="Integer" array="False" size=""/>
+            <for variable="i" start="0" end="Len(cumle)-1" direction="inc" step="1">
+                <assign variable="ascii" expression="ToCode(Char(cumle,i))"/>
+                <assign variable="ascii" expression="ascii-1"/>
+                <assign variable="sifre" expression="sifre&amp;ToChar(ascii)"/>
+            </for>
+            <output expression="&quot;Gelen &#351;ifre: &quot;&amp;sifre&amp;&quot;, orjinal hali ise: &quot;&amp;cumle" newline="True"/>
+        </body>
+    </function>
+    <function name="Sifrele" type="String" variable="sifre">
+        <parameters>
+            <parameter name="cumle" type="String" array="False"/>
+        </parameters>
+        <body>
+            <declare name="sifre" type="String" array="False" size=""/>
+            <assign variable="sifre" expression="&quot;&quot;"/>
+            <declare name="ascii, i" type="Integer" array="False" size=""/>
+            <for variable="i" start="0" end="Len(cumle)-1" direction="inc" step="1">
+                <assign variable="ascii" expression="ToCode(Char(cumle,i))"/>
+                <assign variable="ascii" expression="ascii+1"/>
+                <assign variable="sifre" expression="sifre&amp;ToChar(ascii)"/>
+            </for>
+            <output expression="&quot;Gelen cumle: &quot;&amp;cumle&amp;&quot;, &#351;ifrelenmi&#351; hali ise: &quot;&amp;sifre" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

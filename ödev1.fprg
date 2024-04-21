@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Lenovo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-12-12 07:24:17 &#214;S"/>
+        <attribute name="created" value="TGVub3ZvO0RFU0tUT1AtUkRQUkhDMzsyMDIzLTEyLTA3OzExOjI0OjAxIMOWUzszMTIy"/>
+        <attribute name="edited" value="TGVub3ZvO0RFU0tUT1AtUkRQUkhDMzsyMDIzLTEyLTEyOzA3OjI0OjE3IMOWUzszOzMyNDA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="katilimci, erkekKatilimci, kizKatilimci, begenenKiz, begenenErkek, begenilme, cinsiyet, kahve, devamMi" type="Integer" array="False" size=""/>
+            <assign variable="katilimci" expression="0"/>
+            <assign variable="erkekKatilimci" expression="0"/>
+            <assign variable="kizKatilimci" expression="0"/>
+            <assign variable="begenenKiz" expression="0"/>
+            <assign variable="begenenErkek" expression="0"/>
+            <assign variable="begenilme" expression="0"/>
+            <declare name="devam" type="Boolean" array="False" size=""/>
+            <assign variable="devam" expression="true"/>
+            <output expression="&quot;Kahve sevdal&#305;lar&#305; derne&#287;i y&#305;ll&#305;k anketine ho&#351;geldiniz!&quot;" newline="True"/>
+            <while expression="devam = true">
+                <output expression="&quot;Cinsiyetiniz nedir? (1 veya 0 &#351;eklinde cevaplay&#305;n&#305;z. 1=erkek, 0=kad&#305;n)&quot;" newline="True"/>
+                <input variable="cinsiyet"/>
+                <assign variable="katilimci" expression="katilimci + 1"/>
+                <if expression="cinsiyet = 1">
+                    <then>
+                        <assign variable="erkekKatilimci" expression="erkekKatilimci+ 1"/>
+                        <output expression="&quot;Kahveyi be&#287;endiniz mi? (1 veya 0 &#351;eklinde cevaplay&#305;n&#305;z. 1=be&#287;endim, 0=be&#287;enmedim)&quot;" newline="True"/>
+                        <input variable="kahve"/>
+                        <if expression="kahve = 1">
+                            <then>
+                                <assign variable="begenilme" expression="begenilme + 1"/>
+                                <assign variable="begenenErkek" expression="begenenErkek + 1"/>
+                            </then>
+                            <else>
+                                <if expression="kahve = 0">
+                                    <then/>
+                                    <else>
+                                        <output expression="&quot;Hatal&#305; veri giri&#351;i! Anket sonland&#305;r&#305;l&#305;yor..&quot;" newline="True"/>
+                                        <breakpoint expression="" always="True"/>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </then>
+                    <else>
+                        <if expression="cinsiyet = 0">
+                            <then>
+                                <assign variable="kizKatilimci" expression="kizKatilimci+ 1"/>
+                                <output expression="&quot;Kahveyi be&#287;endiniz mi? (1 veya 0 &#351;eklinde cevaplay&#305;n&#305;z. 1=be&#287;endim, 0=be&#287;enmedim)&quot;" newline="True"/>
+                                <input variable="kahve"/>
+                                <if expression="kahve = 1">
+                                    <then>
+                                        <assign variable="begenilme" expression="begenilme + 1"/>
+                                        <assign variable="begenenKiz" expression="begenenKiz + 1"/>
+                                    </then>
+                                    <else>
+                                        <if expression="kahve = 0">
+                                            <then/>
+                                            <else>
+                                                <output expression="&quot;Hatal&#305; veri giri&#351;i! Anket sonland&#305;r&#305;l&#305;yor..&quot;" newline="True"/>
+                                                <breakpoint expression="" always="True"/>
+                                            </else>
+                                        </if>
+                                    </else>
+                                </if>
+                            </then>
+                            <else>
+                                <output expression="&quot;Hatal&#305; veri giri&#351;i! Anket sonland&#305;r&#305;l&#305;yor..&quot;" newline="True"/>
+                                <breakpoint expression="" always="True"/>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+                <output expression="&quot;Anketi tekrarlamak ister misiniz? (1 veya 0 &#351;eklinde cevaplay&#305;n&#305;z. 1=evet, 0=hay&#305;r)&quot;" newline="True"/>
+                <input variable="devamMi"/>
+                <if expression="devamMi = 1">
+                    <then>
+                        <assign variable="devam" expression="true"/>
+                    </then>
+                    <else>
+                        <if expression="devamMi = 0">
+                            <then>
+                                <assign variable="devam" expression="false"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;Hatal&#305; veri giri&#351;i! Anket sonland&#305;r&#305;l&#305;yor..&quot;" newline="True"/>
+                                <breakpoint expression="" always="True"/>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </while>
+            <output expression="&quot;Ankete kat&#305;lan toplam ki&#351;i say&#305;s&#305; = &quot;&amp;katilimci" newline="True"/>
+            <output expression="&quot;Kat&#305;lan ki&#351;ilerin &quot; &amp;erkekKatilimci&amp; &quot; tanesi erkek, &quot; &amp;kizKatilimci&amp; &quot; tanesi k&#305;zd&#305;r.&quot;" newline="True"/>
+            <output expression="&quot;Kahveyi &quot; &amp;begenilme&amp; &quot; ki&#351;i be&#287;endi.&quot;" newline="True"/>
+            <output expression="&quot;Be&#287;enenlerin &quot; &amp;begenenErkek&amp; &quot; tanesi erkek, &quot; &amp;begenenKiz&amp; &quot; tanesi k&#305;zd&#305;r.&quot;" newline="True"/>
+            <output expression="&quot;Yine bekleriz :) &quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

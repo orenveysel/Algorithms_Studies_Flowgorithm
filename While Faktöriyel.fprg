@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Lenovo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-14 06:10:54 &#214;S"/>
+        <attribute name="created" value="TGVub3ZvO0RFU0tUT1AtUkRQUkhDMzsyMDI0LTAzLTE0OzA1OjU4OjAxIMOWUzszMTMx"/>
+        <attribute name="edited" value="TGVub3ZvO0RFU0tUT1AtUkRQUkhDMzsyMDI0LTAzLTE0OzA2OjEwOjU0IMOWUzsxOzMyMzY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi, toplam" type="Integer" array="False" size=""/>
+            <output expression="&quot;Fakt&#246;riyeli al&#305;nacak say&#305;y&#305; giriniz: &quot;" newline="True"/>
+            <input variable="sayi"/>
+            <assign variable="toplam" expression="1"/>
+            <while expression="sayi &gt; 1">
+                <assign variable="toplam" expression="toplam*sayi"/>
+                <assign variable="sayi" expression="sayi - 1"/>
+            </while>
+            <output expression="&quot;Sonu&#231;: &quot;&amp;toplam" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

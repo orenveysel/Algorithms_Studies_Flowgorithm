@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Lenovo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-18 02:40:04 &#214;S"/>
+        <attribute name="created" value="TGVub3ZvO0RFU0tUT1AtUkRQUkhDMzsyMDI0LTAzLTE4OzAyOjA5OjQyIMOWUzszMTMz"/>
+        <attribute name="edited" value="TGVub3ZvO0RFU0tUT1AtUkRQUkhDMzsyMDI0LTAzLTE4OzAyOjQwOjA0IMOWUzsyOzMyMzU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi1, sayi2" type="Integer" array="False" size=""/>
+            <assign variable="sayi1" expression="1"/>
+            <assign variable="sayi2" expression="1"/>
+            <for variable="sayi1" start="1" end="9" direction="inc" step="1">
+                <for variable="sayi2" start="1" end="9" direction="inc" step="1">
+                    <output expression="sayi1&amp;&quot; x &quot;&amp;sayi2&amp;&quot; = &quot;&amp;sayi1*sayi2" newline="True"/>
+                </for>
+                <output expression="&quot;************************&quot;" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

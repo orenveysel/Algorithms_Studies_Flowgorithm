@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="MATEBOOK 14"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-12-07 12:06:07 &#214;S"/>
+        <attribute name="created" value="TUFURUJPT0sgMTQ7REVTS1RPUC1ORFZPVkNROzIwMjMtMTItMDc7MTA6NTU6NTYgw5bDljszNDA5"/>
+        <attribute name="edited" value="TUFURUJPT0sgMTQ7REVTS1RPUC1ORFZPVkNROzIwMjMtMTItMDc7MTI6MDY6MDcgw5ZTOzI7MzM4MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="fiyat" type="Integer" array="False" size=""/>
+            <declare name="temp" type="String" array="False" size=""/>
+            <declare name="kdv, kdvliFiyat" type="Real" array="False" size=""/>
+            <output expression="&quot;Fiyat Giriniz :&quot;" newline="True"/>
+            <input variable="fiyat"/>
+            <assign variable="kdv" expression="fiyat*20/100"/>
+            <assign variable="kdvliFiyat" expression="fiyat+kdv"/>
+            <output expression="&quot;Giriken fiyat:&quot; &amp;fiyat" newline="True"/>
+            <output expression="&quot;Kdv si:&quot; &amp;kdv" newline="True"/>
+            <output expression="&quot;Toplam Kdv'li Fiyat:&quot; &amp;kdvliFiyat" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

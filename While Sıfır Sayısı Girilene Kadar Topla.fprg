@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Lenovo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-14 06:30:57 &#214;S"/>
+        <attribute name="created" value="TGVub3ZvO0RFU0tUT1AtUkRQUkhDMzsyMDI0LTAzLTE0OzA2OjEwOjU5IMOWUzszMTMz"/>
+        <attribute name="edited" value="TGVub3ZvO0RFU0tUT1AtUkRQUkhDMzsyMDI0LTAzLTE0OzA2OjMwOjU3IMOWUzszOzMyNDM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi, toplam" type="Integer" array="False" size=""/>
+            <declare name="durum" type="Boolean" array="False" size=""/>
+            <assign variable="durum" expression="true"/>
+            <assign variable="sayi" expression="1"/>
+            <assign variable="toplam" expression="0"/>
+            <while expression="durum">
+                <output expression="&quot;Say&#305; giriniz: &quot;" newline="True"/>
+                <input variable="sayi"/>
+                <if expression="sayi = 0">
+                    <then>
+                        <assign variable="durum" expression="false"/>
+                    </then>
+                    <else>
+                        <assign variable="toplam" expression="toplam + sayi"/>
+                    </else>
+                </if>
+            </while>
+            <output expression="&quot;Toplam: &quot;&amp;toplam" newline="True"/>
+            <output expression="&quot;Program Bitti.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Lenovo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-15 04:13:52 &#214;S"/>
+        <attribute name="created" value="TGVub3ZvO0RFU0tUT1AtUkRQUkhDMzsyMDI0LTAzLTE1OzAzOjU3OjExIMOWUzszMTMw"/>
+        <attribute name="edited" value="TGVub3ZvO0RFU0tUT1AtUkRQUkhDMzsyMDI0LTAzLTE1OzA0OjEzOjUyIMOWUzsxOzMyMzY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayac, ogrenci1, ogrenci2, ogrenci3, ogrenci4, ogrenci5" type="Integer" array="False" size=""/>
+            <declare name="notlar" type="Integer" array="True" size="5"/>
+            <assign variable="sayac" expression="0"/>
+            <for variable="sayac" start="1" end="5" direction="inc" step="1">
+                <output expression="&quot;Sayac: &quot;&amp;sayac" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

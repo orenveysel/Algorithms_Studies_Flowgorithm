@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Lenovo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-14 05:54:10 &#214;S"/>
+        <attribute name="created" value="TGVub3ZvO0RFU0tUT1AtUkRQUkhDMzsyMDI0LTAzLTE0OzAyOjMyOjQ1IMOWUzszMTI4"/>
+        <attribute name="edited" value="TGVub3ZvO0RFU0tUT1AtUkRQUkhDMzsyMDI0LTAzLTE0OzA0OjU5OjQ1IMOWUzsxO0xlbm92bztERVNLVE9QLVJEUFJIQzM7MjAyMy0xMi0wNzsxMDo1NzozNyDDlsOWOzMtIFZBVCBDYWxjdWxhdGlvbi5mcHJnOzg2Mzk="/>
+        <attribute name="edited" value="TGVub3ZvO0RFU0tUT1AtUkRQUkhDMzsyMDI0LTAzLTE0OzA1OjU0OjA5IMOWUzsxOzMyNDM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayac" type="Integer" array="False" size=""/>
+            <assign variable="sayac" expression="0"/>
+            <while expression="sayac &lt; 10">
+                <output expression="&quot;Sayac Degeri: &quot;&amp;sayac" newline="True"/>
+                <assign variable="sayac" expression="sayac + 1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

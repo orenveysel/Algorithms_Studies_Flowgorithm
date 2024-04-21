@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Lenovo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-18 01:28:57 &#214;S"/>
+        <attribute name="created" value="TGVub3ZvO0RFU0tUT1AtUkRQUkhDMzsyMDI0LTAzLTE4OzEyOjI4OjM3IMOWw5Y7MzI3MA=="/>
+        <attribute name="edited" value="TGVub3ZvO0RFU0tUT1AtUkRQUkhDMzsyMDI0LTAzLTE4OzAxOjI4OjU3IMOWUzsyOzMyNDg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="counter, fibo, oldFibo, print" type="Integer" array="False" size=""/>
+            <assign variable="print" expression="0"/>
+            <assign variable="fibo" expression="1"/>
+            <assign variable="oldFibo" expression="0"/>
+            <for variable="counter" start="1" end="20" direction="inc" step="1">
+                <output expression="fibo" newline="True"/>
+                <assign variable="print" expression="oldFibo + fibo"/>
+                <assign variable="oldFibo" expression="fibo"/>
+                <assign variable="fibo" expression="print"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

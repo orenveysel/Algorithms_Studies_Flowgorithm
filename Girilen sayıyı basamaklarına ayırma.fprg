@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Lenovo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-19 03:03:53 &#214;S"/>
+        <attribute name="created" value="TGVub3ZvO0RFU0tUT1AtUkRQUkhDMzsyMDI0LTAzLTE5OzAyOjM2OjExIMOWUzszMTMw"/>
+        <attribute name="edited" value="TGVub3ZvO0RFU0tUT1AtUkRQUkhDMzsyMDI0LTAzLTE5OzAzOjAzOjUzIMOWUzsxOzMyMzk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi, birler, onlar, yuzler" type="Integer" array="False" size=""/>
+            <output expression="&quot;3 basamakl&#305; bir say&#305; giriniz: &quot;" newline="True"/>
+            <input variable="sayi"/>
+            <assign variable="birler" expression="sayi%10"/>
+            <assign variable="onlar" expression="((sayi%100)-birler)/10"/>
+            <assign variable="yuzler" expression="((sayi%1000)-onlar-birler)/100"/>
+            <output expression="&quot;Birler basama&#287;&#305;: &quot;&amp;birler&amp;&quot;, Onlar basama&#287;&#305;: &quot;&amp;onlar&amp;&quot;, Y&#252;zler basama&#287;&#305;: &quot;&amp;yuzler" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

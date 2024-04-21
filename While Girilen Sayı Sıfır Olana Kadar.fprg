@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Lenovo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-14 06:25:41 &#214;S"/>
+        <attribute name="created" value="TGVub3ZvO0RFU0tUT1AtUkRQUkhDMzsyMDI0LTAzLTE0OzA2OjEwOjU5IMOWUzszMTMz"/>
+        <attribute name="edited" value="TGVub3ZvO0RFU0tUT1AtUkRQUkhDMzsyMDI0LTAzLTE0OzA2OjI1OjQxIMOWUzsyOzMyMzk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi, sonuc" type="Integer" array="False" size=""/>
+            <declare name="durum" type="Boolean" array="False" size=""/>
+            <assign variable="durum" expression="true"/>
+            <assign variable="sayi" expression="1"/>
+            <assign variable="sonuc" expression="0"/>
+            <while expression="durum">
+                <assign variable="sonuc" expression="sonuc + sayi"/>
+                <if expression="sayi &gt;= 5">
+                    <then>
+                        <assign variable="durum" expression="false"/>
+                    </then>
+                    <else>
+                        <assign variable="sayi" expression="sayi + 1"/>
+                        <output expression="sayi" newline="True"/>
+                    </else>
+                </if>
+            </while>
+            <output expression="&quot;Sonu&#231;: &quot;&amp;sonuc" newline="True"/>
+            <output expression="&quot;Program Bitti.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

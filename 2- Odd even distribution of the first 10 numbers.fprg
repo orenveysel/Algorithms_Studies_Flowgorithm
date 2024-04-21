@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Lenovo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-12-19 12:10:02 &#214;&#214;"/>
+        <attribute name="created" value="TGVub3ZvO0RFU0tUT1AtUkRQUkhDMzsyMDIzLTEyLTEzOzEwOjU3OjE2IMOWUzszMTMw"/>
+        <attribute name="edited" value="TGVub3ZvO0RFU0tUT1AtUkRQUkhDMzsyMDIzLTEyLTEzOzEwOjU5OjA1IMOWUzsxO01BVEVCT09LIDE0O0RFU0tUT1AtTkRWT1ZDUTsyMDIzLTEyLTA3OzEyOjI1OjQzIMOWUztpbGsxMFNheWluaW5UZWtDaWZ0RGFnaWxpbWkuZnByZzs5NzM2"/>
+        <attribute name="edited" value="TGVub3ZvO0RFU0tUT1AtUkRQUkhDMzsyMDIzLTEyLTE5OzEyOjEwOjAyIMOWw5Y7MjszMzYy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="index, remainder" type="Integer" array="False" size=""/>
+            <assign variable="index" expression="0"/>
+            <while expression="index&lt;10">
+                <assign variable="remainder" expression="index%2"/>
+                <if expression="remainder=0">
+                    <then>
+                        <output expression="&quot;Odd: &quot; &amp;index" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;Even: &quot; &amp;index" newline="True"/>
+                    </else>
+                </if>
+                <assign variable="index" expression="index + 1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

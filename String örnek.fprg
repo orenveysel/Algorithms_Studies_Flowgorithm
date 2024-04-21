@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Lenovo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-19 03:17:10 &#214;S"/>
+        <attribute name="created" value="TGVub3ZvO0RFU0tUT1AtUkRQUkhDMzsyMDI0LTAzLTE5OzAzOjAzOjU5IMOWUzszMTM3"/>
+        <attribute name="edited" value="TGVub3ZvO0RFU0tUT1AtUkRQUkhDMzsyMDI0LTAzLTE5OzAzOjE3OjEwIMOWUzsxOzMyMzc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="cumle" type="String" array="False" size=""/>
+            <output expression="&quot;Bir c&#252;mle giriniz: &quot;" newline="True"/>
+            <input variable="cumle"/>
+            <output expression="&quot;Girilen c&#252;mle &quot;&amp;(Len(cumle))&amp;&quot; karakter uzunlu&#287;undad&#305;r.&quot;" newline="True"/>
+            <for variable="i" start="0" end="Len(cumle)-1" direction="inc" step="1">
+                <output expression="Char(cumle,i)" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="MATEBOOK 14"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-12-07 01:07:20 &#214;S"/>
+        <attribute name="created" value="TUFURUJPT0sgMTQ7REVTS1RPUC1ORFZPVkNROzIwMjMtMTItMDc7MTI6NTc6MzYgw5ZTOzMyODA="/>
+        <attribute name="edited" value="TUFURUJPT0sgMTQ7REVTS1RPUC1ORFZPVkNROzIwMjMtMTItMDc7MDE6MDc6MjAgw5ZTOzE7MzM3NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="index, tutulanSayi, tahmin" type="Integer" array="False" size=""/>
+            <declare name="tahminDogrumu" type="Boolean" array="False" size=""/>
+            <assign variable="tahminDogrumu" expression="false"/>
+            <assign variable="tutulanSayi" expression="Random(50)+1"/>
+            <assign variable="index" expression="5"/>
+            <while expression="index&gt;0 and tahminDogrumu=false">
+                <output expression="&quot;Kalan Deneme Hakkiniz :&quot; &amp;index" newline="True"/>
+                <output expression="&quot;Bir sayi Giriniz:&quot;" newline="True"/>
+                <input variable="tahmin"/>
+                <if expression="tahmin=tutulanSayi">
+                    <then>
+                        <output expression="&quot;Tebrikler &quot; &amp;index &amp; &quot; denemede buldunuz&quot;" newline="True"/>
+                        <assign variable="tahminDogrumu" expression="true"/>
+                    </then>
+                    <else>
+                        <if expression="tahmin&gt;tutulanSayi">
+                            <then>
+                                <output expression="&quot;Daha Kucuk Bir sayi Giriniz&quot;" newline="True"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;Daha BuyukBir sayi Giriniz&quot;" newline="True"/>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+                <assign variable="index" expression="index-1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

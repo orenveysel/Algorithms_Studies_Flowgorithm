@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Lenovo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-18 05:43:40 &#214;S"/>
+        <attribute name="created" value="TGVub3ZvO0RFU0tUT1AtUkRQUkhDMzsyMDI0LTAzLTE4OzA0OjQ1OjU2IMOWUzszMTQw"/>
+        <attribute name="edited" value="TGVub3ZvO0RFU0tUT1AtUkRQUkhDMzsyMDI0LTAzLTE4OzA1OjQzOjQwIMOWUzsyOzMyNDE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c" type="Integer" array="False" size=""/>
+            <output expression="&quot;a de&#287;eri giriniz: &quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;b de&#287;eri giriniz: &quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;c de&#287;eri giriniz: &quot;" newline="True"/>
+            <input variable="c"/>
+            <output expression="&quot;Denklem: &quot;&amp;a&amp;&quot;x&#178; + &quot;&amp;b&amp;&quot;x + &quot;&amp;c" newline="True"/>
+            <call expression="KokBulma(a, b, c)"/>
+        </body>
+    </function>
+    <function name="KokBulma" type="None" variable="">
+        <parameters>
+            <parameter name="a" type="Integer" array="False"/>
+            <parameter name="b" type="Integer" array="False"/>
+            <parameter name="c" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="kok1, kok2, delta" type="Real" array="False" size=""/>
+            <assign variable="delta" expression="b*b-4*a*c"/>
+            <output expression="&quot;Delta de&#287;eri: &quot;&amp;delta" newline="True"/>
+            <if expression="delta &gt; 0">
+                <then>
+                    <assign variable="kok1" expression="(-b+sqrt(delta))/2*a"/>
+                    <assign variable="kok2" expression="(-b-sqrt(delta))/2*a"/>
+                    <output expression="&quot;1. k&#246;k: &quot;&amp;kok1&amp;&quot;, 2. k&#246;k: &quot;&amp;kok2" newline="True"/>
+                </then>
+                <else>
+                    <if expression="delta = 0">
+                        <then>
+                            <assign variable="kok1" expression="-b/2*a"/>
+                            <output expression="&quot;Denklerin tek reel k&#246;k&#252; vard&#305;r: &quot;&amp;kok1" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Denklerim reel k&#246;k&#252; yoktur.&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

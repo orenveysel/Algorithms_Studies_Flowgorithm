@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Lenovo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-12-21 11:57:32 &#214;S"/>
+        <attribute name="created" value="TGVub3ZvO0RFU0tUT1AtUkRQUkhDMzsyMDIzLTEyLTA3OzEwOjU3OjM3IMOWw5Y7MzI2Nw=="/>
+        <attribute name="edited" value="TGVub3ZvO0RFU0tUT1AtUkRQUkhDMzsyMDIzLTEyLTIxOzExOjU3OjMyIMOWUzszOzMyMzg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="price" type="Integer" array="False" size=""/>
+            <declare name="vat, priceWvat" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter the price: &quot;" newline="True"/>
+            <input variable="price"/>
+            <assign variable="vat" expression="price*0.20"/>
+            <assign variable="priceWvat" expression="price + vat"/>
+            <output expression="&quot;Price = &quot;&amp;price" newline="True"/>
+            <output expression="&quot;VAT = &quot;&amp;vat" newline="True"/>
+            <output expression="&quot;Price with VAT = &quot;&amp;priceWvat" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

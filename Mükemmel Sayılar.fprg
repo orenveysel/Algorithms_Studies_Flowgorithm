@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Lenovo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-19 04:15:45 &#214;&#214;"/>
+        <attribute name="created" value="TGVub3ZvO0RFU0tUT1AtUkRQUkhDMzsyMDI0LTAzLTE4OzA1OjU4OjEyIMOWUzszMTM3"/>
+        <attribute name="edited" value="TGVub3ZvO0RFU0tUT1AtUkRQUkhDMzsyMDI0LTAzLTE5OzAzOjQ3OjQwIMOWw5Y7MTtMZW5vdm87REVTS1RPUC1SRFBSSEMzOzIwMjQtMDMtMTk7MDM6NDA6NDAgw5bDljs2Njky"/>
+        <attribute name="edited" value="TGVub3ZvO0RFU0tUT1AtUkRQUkhDMzsyMDI0LTAzLTE5OzA0OjE1OjQ1IMOWw5Y7MTszMzc1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, j" type="Integer" array="False" size=""/>
+            <for variable="i" start="1" end="500" direction="inc" step="1">
+                <call expression="mukemmelSayi(i)"/>
+            </for>
+        </body>
+    </function>
+    <function name="mukemmelSayi" type="None" variable="">
+        <parameters>
+            <parameter name="i" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="bolenler, j" type="Integer" array="False" size=""/>
+            <assign variable="bolenler" expression="0"/>
+            <for variable="j" start="1" end="i-1" direction="inc" step="1">
+                <if expression="i%j == 0">
+                    <then>
+                        <assign variable="bolenler" expression="bolenler + j"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <if expression="bolenler == j">
+                <then>
+                    <output expression="j&amp;&quot; bir m&#252;kemmel say&#305;d&#305;r.&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <assign variable="bolenler" expression="0"/>
+        </body>
+    </function>
+</flowgorithm>
